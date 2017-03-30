@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8B46F2611E8B506500DEEF03 /* UINavigationController+Juny.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B46F2601E8B506500DEEF03 /* UINavigationController+Juny.m */; };
-		8B8DFDD51E8CD5B900B747C3 /* NLTransiton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8DFDD41E8CD5B900B747C3 /* NLTransiton.m */; };
 		8BB3D8B71E88A16D00C5D034 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3D8B61E88A16D00C5D034 /* FirstViewController.m */; };
 		8BB96FFE1E84C6B300E58681 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB96FFD1E84C6B300E58681 /* ImageViewController.m */; };
 		8BC26EE51E7B863600588AF6 /* NLTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC26EE41E7B863600588AF6 /* NLTransitionAnimation.m */; };
@@ -47,8 +46,6 @@
 /* Begin PBXFileReference section */
 		8B46F25F1E8B506500DEEF03 /* UINavigationController+Juny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Juny.h"; sourceTree = "<group>"; };
 		8B46F2601E8B506500DEEF03 /* UINavigationController+Juny.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Juny.m"; sourceTree = "<group>"; };
-		8B8DFDD31E8CD5B900B747C3 /* NLTransiton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLTransiton.h; sourceTree = "<group>"; };
-		8B8DFDD41E8CD5B900B747C3 /* NLTransiton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLTransiton.m; sourceTree = "<group>"; };
 		8BB3D8B51E88A16D00C5D034 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		8BB3D8B61E88A16D00C5D034 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		8BB96FFC1E84C6B300E58681 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
@@ -146,8 +143,6 @@
 				8B46F2601E8B506500DEEF03 /* UINavigationController+Juny.m */,
 				8BC26EE31E7B863600588AF6 /* NLTransitionAnimation.h */,
 				8BC26EE41E7B863600588AF6 /* NLTransitionAnimation.m */,
-				8B8DFDD31E8CD5B900B747C3 /* NLTransiton.h */,
-				8B8DFDD41E8CD5B900B747C3 /* NLTransiton.m */,
 				8BC26EE61E7BA84B00588AF6 /* CustomInteractionController.h */,
 				8BC26EE71E7BA84B00588AF6 /* CustomInteractionController.m */,
 				8BDA5D051E7A321400C8A1A5 /* Main.storyboard */,
@@ -327,7 +322,6 @@
 				8B46F2611E8B506500DEEF03 /* UINavigationController+Juny.m in Sources */,
 				8BDA5D0A1E7A321400C8A1A5 /* Juny_NavDemo.xcdatamodeld in Sources */,
 				8BDA5D041E7A321400C8A1A5 /* ViewController.m in Sources */,
-				8B8DFDD51E8CD5B900B747C3 /* NLTransiton.m in Sources */,
 				8BDA5D341E7A327800C8A1A5 /* UIViewController+NavExtension.m in Sources */,
 				8BC26EE51E7B863600588AF6 /* NLTransitionAnimation.m in Sources */,
 				8BDA5D011E7A321400C8A1A5 /* AppDelegate.m in Sources */,

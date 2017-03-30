@@ -10,7 +10,7 @@
 
 @implementation UINavigationController (Juny)
 
-+ (void)initialize{
++ (void)load{
  
     //方法交换
     SEL sel1 = NSSelectorFromString(@"_updateInteractiveTransition:");
@@ -151,9 +151,6 @@
 
 #pragma mark------------------setter/getter----------------------
 
-- (UIColor*)defaultNavBarTintColor{
-    return [UIColor colorWithRed:0 green:0.47843 blue:1 alpha:1];
-}
 
 
 
