@@ -23,6 +23,13 @@
     self.view.backgroundColor = [UIColor yellowColor];
     [self changeNavBarBgAlpha:0];
     
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 300)];
+    imageView.image = [UIImage imageNamed:@"IMG_0387.jpg"];
+    [self.view addSubview:imageView];
+    
+//    imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+//    imageView.contentMode =  UIViewContentModeCenter;
+    
 }
 
 - (void)didReceiveMemoryWarning {

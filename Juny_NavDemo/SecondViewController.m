@@ -21,6 +21,7 @@ UIScrollViewDelegate>{
 
 @property (nonatomic, assign) BOOL statusBarShouldLight;//
 @property (nonatomic, strong) UITableView *tableView;//
+@property (nonatomic, strong)UIImageView *headerImageView;
 
 
 @end
@@ -43,10 +44,14 @@ UIScrollViewDelegate>{
     _tableView.dataSource = self;
     [self.view addSubview:_tableView];
     
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 300)];
-    imageView.image = [UIImage imageNamed:@"zhengti-bg"];
-    _tableView.tableHeaderView = imageView;
+    _headerImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 300)];
+    _headerImageView.image = [UIImage imageNamed:@"IMG_0387.jpg"];
     
+    _headerImageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    _headerImageView.contentMode =  UIViewContentModeScaleAspectFill;
+
+//    _tableView.tableHeaderView = _headerImageView;
+    [_tableView insertSubview:_headerImageView atIndex:0];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -64,10 +69,19 @@ UIScrollViewDelegate>{
     // Dispose of any resources that can be recreated.
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 300;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 30;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 300)];
+    view.backgroundColor = [UIColor clearColor];
+    return view;
+}
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *rid = @"cellId";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: rid];
@@ -122,6 +136,10 @@ UIScrollViewDelegate>{
     CGFloat max = 300-64;
     CGFloat contentOffsetY = scrollView.contentOffset.y;
     [self changeNavBarBgAlpha:(contentOffsetY - min)/64.0];
+    if (contentOffsetY<=0) {
+        _headerImageView.frame = CGRectMake(0,  contentOffsetY, [UIScreen mainScreen].bounds.size.width, 300-contentOffsetY);
+        _tableView.sectionHeaderHeight = 300+contentOffsetY;
+    }
 }
 
 //#pragma mark --------UINavigationControllerDelegate-----------

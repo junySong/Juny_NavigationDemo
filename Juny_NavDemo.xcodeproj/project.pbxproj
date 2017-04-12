@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		116688F31E9DDCC600C6A953 /* IMG_0387.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 116688F21E9DDCC600C6A953 /* IMG_0387.jpg */; };
 		8B46F2611E8B506500DEEF03 /* UINavigationController+Juny.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B46F2601E8B506500DEEF03 /* UINavigationController+Juny.m */; };
 		8BB3D8B71E88A16D00C5D034 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB3D8B61E88A16D00C5D034 /* FirstViewController.m */; };
 		8BB96FFE1E84C6B300E58681 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB96FFD1E84C6B300E58681 /* ImageViewController.m */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		116688F21E9DDCC600C6A953 /* IMG_0387.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0387.jpg; sourceTree = "<group>"; };
 		8B46F25F1E8B506500DEEF03 /* UINavigationController+Juny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Juny.h"; sourceTree = "<group>"; };
 		8B46F2601E8B506500DEEF03 /* UINavigationController+Juny.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Juny.m"; sourceTree = "<group>"; };
 		8BB3D8B51E88A16D00C5D034 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		8BDA5CFB1E7A321400C8A1A5 /* Juny_NavDemo */ = {
 			isa = PBXGroup;
 			children = (
+				116688F21E9DDCC600C6A953 /* IMG_0387.jpg */,
 				8BDA5D351E7A451800C8A1A5 /* zhengti-bg.png */,
 				8BDA5CFF1E7A321400C8A1A5 /* AppDelegate.h */,
 				8BDA5D001E7A321400C8A1A5 /* AppDelegate.m */,
@@ -291,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BDA5D361E7A451800C8A1A5 /* zhengti-bg.png in Resources */,
+				116688F31E9DDCC600C6A953 /* IMG_0387.jpg in Resources */,
 				8BDA5D0F1E7A321400C8A1A5 /* LaunchScreen.storyboard in Resources */,
 				8BDA5D0C1E7A321400C8A1A5 /* Assets.xcassets in Resources */,
 				8BDA5D071E7A321400C8A1A5 /* Main.storyboard in Resources */,
